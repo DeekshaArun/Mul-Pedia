@@ -1,0 +1,146 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Result</title>
+
+<!-- Bootstrap core CSS -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<style>
+body {
+background-image: url('static/images/b1.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+text-align:center;
+}
+
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+
+  text-align: left;
+  padding: 8px;
+}
+
+tr {
+  background-color: #dddddd;
+}
+</style>
+<!-- Custom styles for this template -->
+<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<a class="navbar-brand" href="#">Mul-pedia</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+<ul class="navbar-nav mr-auto">
+
+   <li class="nav-item active">
+      <span class="sr-only">(current)</span>
+       <a class="nav-link" href="home1">Home </a>
+  </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="LeafyieldPred">Analyze your field<span class="sr-only">(current)</span> </a>
+  </li>
+  <li class="nav-item">
+    <li class="nav-item ">
+    <a class="nav-link" href="#">Analyze your leaves</a>
+  </li>
+</ul>
+</div>
+</nav>
+
+<main role="main" class="container">
+
+<div class="starter-template">
+  <br>
+    <br>
+    <h1><font size="25" color="#ffffff">~ Fertilizers for your soil ~</font></h1>
+    <br>
+
+  <br>
+
+  <h3> <font color="#ffffff"> Your field will yield {{prediction}} Mt/ha/yr</font>  </h3>
+    <br>
+    <br>
+    <table>
+  <tr>
+      <th><center><b>Nutrients</b></center></th>
+      <th><center><b>Range</b></center></th>
+      <th><center><b>Requirements</b></center></th>
+  </tr>
+  <tr>
+    <td><h5> <center>pH </center></h5></td>
+     <td>Ideal Range - 6.5 to 6.8</td>
+    <td>Add the mentioned quantity of - Gypsum (Alkaline soil) / Lime (Acidic soil)
+        <br> 1.25MT (Sandy) <br> 2.50MT (Sandy Loam) <br> 5.0MT (Loamy)<br> 7.5MT (Clayey Loam)</td>
+  </tr>
+  <tr>
+    <td><h5> <center>Organic Carbon</center></h5></td>
+     <td><6.5% Low <br> 6.5-10% Med  <br> >10% High</td>
+    <td>Mulching - Make pits between rows of crops and add dried leaves,straws ,etc</td>
+  </tr>
+
+ <tr>
+    <td><h5> <center>Phosphorous</center></h5></td>
+     <td><15.0 Kg/hr Low <br> 15-25 Kg/hr Med <br> >25 Kg/hr High</td>
+    <td>Add {{P}} kg/hr of Single Superphosphate</td>
+  </tr>
+  <tr>
+    <td><h5> <center>Potassium</center></h5></td>
+     <td><120.0 Kg/hr Low <br> 120-240 Kg/hr Med <br> >240 Kg/hr High</td>
+    <td>Add {{K}} kg/hr of Murate of Potash</td>
+  </tr>
+  <tr>
+    <td><h5><center>Micronutrients (Zn,Fe,S,etc)</center></h5></td>
+    <td>To be sprayed on the leaves</td>
+    <td>Application of Foliage spray</td>
+  </tr>
+</table>
+
+
+
+</div>
+</main>
+
+<!--<div class="custom-control custom-checkbox">
+<label for="bodytemp">Gender</label>
+<input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+<label class="custom-control-label" for="customCheck">Check this custom checkbox</label>
+</div>
+<button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div> -->
+
+<!-- /.container -->
+<script src="bootstrap/javascript.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script></body>
+</html>

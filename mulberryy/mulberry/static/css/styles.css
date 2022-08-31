@@ -1,0 +1,48 @@
+.starter-template
+{
+	padding: 35px;
+
+}
+#forms
+{
+font-size: 23px;
+}
+.custom-control-label
+{
+	font-size: 20px;
+
+}
+body, html {
+  height: 100%;
+}
+
+.bg1 {
+  /* The image used */
+  background-image: url("images/m1.jpg");
+
+  /* Full height */
+  height: 70%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.logo
+{
+
+	padding: 80px 20px;
+
+}
+
+.qr
+{
+
+	padding: 0 75px ;
+
+}
+.intro
+{
+
+ text-align: justify;
+}
